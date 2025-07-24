@@ -126,7 +126,7 @@ It handles:
 
 - [Next.js Documentation](https://nextjs.org/docs)  
 - [Next.js Learn](https://nextjs.org/learn)  
-- [Mailtrap Documentation](https://mailtrap.io/docs)  
+- [Mailtrap Documentation](https://api-docs.mailtrap.io/docs/mailtrap-api-docs/5tjdeg9545058-mailtrap-api)  
 
 ---
 
