@@ -1,6 +1,6 @@
 # Next.js Authentication Project
 
-This is a modern Next.js project demonstrating a complete user authentication flow including signup, login, profile management, password reset, and email verification.
+This is a modern Next.js project demonstrating a complete user authentication flow including MongoDB database, signup, login, profile management, password reset, and email verification.
 
 ---
 
