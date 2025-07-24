@@ -5,7 +5,6 @@ This is a modern Next.js project demonstrating a complete user authentication fl
 ---
 
 ## Table of Contents
-
 - [Getting Started](#getting-started)  
 - [Features](#features)  
 - [Project Structure](#project-structure)  

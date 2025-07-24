@@ -1,0 +1,11 @@
+# make sure you don't have the "/" in the last of the mongodb url
+MONGODB_URI = mongodb+srv://backend:< "Password" >cluster0.gmx85gf.mongodb.net
+
+# jwt secret key
+TOKEN_SECRET = <User jwt secret>
+
+# Nodemailer credentials
+NODEMAILER_USER = <node mailer username>
+NODEMAILER_PASSWORD = <nodemailer password>
+
+DOMAIN = http://localhost:3000
