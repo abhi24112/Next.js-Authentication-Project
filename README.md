@@ -59,7 +59,7 @@ You can view and manage your MongoDB data using tools like [MongoDB Compass](htt
 
 ### Example MongoDB Data View
 
-![MongoDB Data](public/screenshots/mongodb_data.png)
+![MongoDB Data](/public/mongodb_data_sample.png)
 
 
 ---
@@ -77,7 +77,9 @@ You can view and manage your MongoDB data using tools like [MongoDB Compass](htt
 
 ## Email Integration
 
-This project uses [Mailtrap](https://mailtrap.io) for capturing and testing emails during development. It handles:
+This project uses [Mailtrap](https://mailtrap.io) for capturing and testing emails during development. Due to domain and DNS permission constraints required for sending real emails, this project uses Mailtrap's sandbox environment for email testing.
+
+It handles:
 
 - Verification emails after signup  
 - Password reset emails with secure token links  
@@ -98,22 +100,26 @@ This project uses [Mailtrap](https://mailtrap.io) for capturing and testing emai
 ## Screenshots
 
 ### Sign In Page  
-![Sign In](public/screenshots/signin.png)
+![Sign In](public/signup.png)
 
 ### Login Page  
-![Login](public/screenshots/login.png)
+![Login](public/login.png)
 
 ### Profile Page  
-![Profile](public/screenshots/profile.png)
+![Profile](public/profile.png)
 
 ### Forgot Password Page  
-![Forgot Password](public/screenshots/forgotpassword.png)
+![Forgot Password](public/forgotpassword.png)
 
 ### Reset Password Page  
-![Reset Password](public/screenshots/resetpassword.png)
+![Reset Password](public/newpassword.png)
 
 ### Mailtrap Email Example  
-![Mailtrap Email](public/screenshots/mailtrap_email.png)
+#### Reset Password Mail
+![Mailtrap Email](public/resetpassword_mail.png)
+
+#### Verify User Mail
+![Mailtrap Email](public/verifyemail_mail.png)
 
 ---
 
