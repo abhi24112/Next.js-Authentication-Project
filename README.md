@@ -19,6 +19,12 @@ This is a modern Next.js project demonstrating a complete user authentication fl
 
 ## Getting Started
 
+To add for the package from package.json
+
+```bash
+npm i
+```
+
 To run the development server:
 
 ```bash
