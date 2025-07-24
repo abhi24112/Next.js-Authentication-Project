@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,12 +32,12 @@ export default function Home() {
         </p>
 
         {/* --- Button to Continue --- */}
-        <a
+        <Link
           href="/profile" // Change this link to your user's dashboard or profile page
           className="mt-8 inline-block w-full rounded-lg bg-blue-600 px-5 py-4 text-lg font-semibold text-white shadow-md transition-transform duration-200 hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
         >
           Go to Your Profile
-        </a>
+        </Link>
       </div>
 
       <footer className="absolute bottom-6 text-sm text-gray-400">

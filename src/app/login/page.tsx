@@ -191,7 +191,7 @@ export default function LoginPage() {
         {/* --- Signup Link --- */}
         <div className="mt-6 flex justify-between text-sm">
           <p>
-            Didn't have an Account?{" "}
+            Didn&apos;t have an Account?{" "}
             <Link
               href="/signup"
               className="font-medium text-indigo-600 hover:text-indigo-500 hover:underline"

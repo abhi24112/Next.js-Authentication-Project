@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import User from "@/models/userModel";
 import bcrypt from "bcryptjs";
+import { constants } from "node:buffer";
 
 export const sendEmail = async ({ email, emailType, userId }: any) => {
   try {
@@ -19,7 +20,7 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
       });
     }
 
-    var transport = nodemailer.createTransport({
+    const transport = nodemailer.createTransport({
       host: "sandbox.smtp.mailtrap.io",
       port: 2525,
       auth: {
@@ -46,7 +47,10 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
     const buttonText =
       emailType === "VERIFY" ? "Verify Email" : "Reset Password";
 
-    const verificationLink = emailType === "VERIFY" ? `${process.env.DOMAIN}/verifyemail?token=${hashedToken}` : `${process.env.DOMAIN}/resetpassword?token=${hashedToken}`;
+    const verificationLink =
+      emailType === "VERIFY"
+        ? `${process.env.DOMAIN}/verifyemail?token=${hashedToken}`
+        : `${process.env.DOMAIN}/resetpassword?token=${hashedToken}`;
 
     // --- Email Options Object ---
     const mailOption = {
@@ -120,7 +124,11 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
 
     const mailresponse = await transport.sendMail(mailOption);
     return mailresponse;
-  } catch (error: any) {
-    throw new Error(error.message);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      throw new Error(error.message);
+    } else {
+      throw new Error("An unknown error occurred");
+    }
   }
 };
